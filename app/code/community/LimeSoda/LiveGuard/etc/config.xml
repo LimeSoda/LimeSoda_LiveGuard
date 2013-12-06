@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    
+	<modules>
+		<LimeSoda_LiveGuard>
+			<version>0.0.1</version>
+		</LimeSoda_LiveGuard>
+	</modules>
+	
+	<global>
+	    <events>
+            <controller_front_init_before>
+                <observers>
+                    <limesoda_liveguard_observer>
+                        <class>limesoda_liveguard/observer</class>
+                        <method>controllerFrontInitBefore</method>
+                    </limesoda_liveguard_observer>
+                </observers>
+            </controller_front_init_before>
+        </events>
+        
+	    <helpers>
+            <limesoda_liveguard>
+                <class>LimeSoda_LiveGuard_Helper</class>
+            </limesoda_liveguard>
+        </helpers>
+        
+        <models>
+            <limesoda_liveguard>
+                <class>LimeSoda_LiveGuard_Model</class>
+            </limesoda_liveguard>
+        </models>
+        
+    </global>
+</config>
