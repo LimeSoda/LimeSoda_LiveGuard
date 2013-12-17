@@ -32,7 +32,7 @@ Installation Instructions
 Usage
 -----
 
-### Setting an environment
+### Set an environment name
 
 **Very important: set a name for your environment before you install the extension!**
 
@@ -44,13 +44,15 @@ Configure the environment in your XML. Most of the time you will want to put thi
 
     <config>
         <global>
-            <limesoda_liveguard>
-                <environment>dev</environment>
-            </limesoda_liveguard>
+            <limesoda>
+                <environment>
+                    <name>dev</name>
+                </environment>
+            </limesoda>
         </global>
     </config>
 
-### Adding guards
+### Add guards
 
 Add guards by creating a new extension (or using an existing one) and adding new guards under the `global > limesoda_liveguard > guards` node in `config.xml`:
 

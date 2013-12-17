@@ -2,6 +2,8 @@
 
 class LimeSoda_LiveGuard_Model_Config
 {
+    const ENVIRONMENT_NAME_XML_PATH = 'global/limesoda/environment/name'; 
+    
     const XML_PATH = 'global/limesoda_liveguard';
     
     protected $_config = null;
@@ -38,10 +40,10 @@ class LimeSoda_LiveGuard_Model_Config
      * 
      * @return string
      */    
-    public function getEnvironment()
+    public function getEnvironmentName()
     {
         if ($this->_environment === null) {
-            $environment = trim($this->getConfig()->environment->__toString());
+            $environment = trim(Mage::getConfig()->getNode(self::ENVIRONMENT_NAME_XML_PATH)->__toString());
             
             if ($environment === '') {
                 throw new InvalidArgumentException('Please specify an environment');
@@ -60,7 +62,7 @@ class LimeSoda_LiveGuard_Model_Config
     public function getGuards()
     {
         if ($this->_guards === null) {
-            $environment = $this->getEnvironment();
+            $environment = $this->getEnvironmentName();
             
             $guards = array();
             
