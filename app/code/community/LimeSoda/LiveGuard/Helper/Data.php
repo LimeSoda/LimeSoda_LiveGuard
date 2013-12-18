@@ -18,7 +18,7 @@ class LimeSoda_LiveGuard_Helper_Data extends Mage_Core_Helper_Abstract
         $actual = Mage::getStoreConfig($path, $store);
         
         if ($expected != $actual) {
-            throw new Exception("The value in the environment configuration XML for '$variable' did not match the value in '$path'. Expected: $expected, actual: $actual");
+            throw new Exception("The value of environment configuration variable '$variable' did not match the system configuration value of '$path'" . (!is_null($store) ? " (store '$store')" : '') . ". Expected: $expected, actual: $actual");
         }
     }
 }
