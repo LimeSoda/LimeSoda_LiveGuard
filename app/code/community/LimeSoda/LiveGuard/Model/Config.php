@@ -2,13 +2,9 @@
 
 class LimeSoda_LiveGuard_Model_Config
 {
-    const ENVIRONMENT_NAME_XML_PATH = 'global/limesoda/environment/name'; 
-    
-    const XML_PATH = 'global/limesoda_liveguard';
+    const XML_PATH = 'global/limesoda/guards';
     
     protected $_config = null;
-    
-    protected $_environment = null;
     
     protected $_guards = null;
 
@@ -36,25 +32,6 @@ class LimeSoda_LiveGuard_Model_Config
     }
 
     /**
-     * Returns the environment the shop runs in.
-     * 
-     * @return string
-     */    
-    public function getEnvironmentName()
-    {
-        if ($this->_environment === null) {
-            $environment = trim(Mage::getConfig()->getNode(self::ENVIRONMENT_NAME_XML_PATH)->__toString());
-            
-            if ($environment === '') {
-                throw new InvalidArgumentException('Please specify an environment');
-            }
-            
-            $this->_environment = $environment;  
-        }
-        return $this->_environment;
-    }
-    
-    /**
      * Returns the guards.
      * 
      * @return Array an array of guards
@@ -62,11 +39,11 @@ class LimeSoda_LiveGuard_Model_Config
     public function getGuards()
     {
         if ($this->_guards === null) {
-            $environment = $this->getEnvironmentName();
+            $environment = Mage::helper('limesoda_environmentconfiguration/current')->getEnvironmentName();
             
             $guards = array();
             
-            foreach ($this->getConfig()->guards->asArray() as $name => $config) {
+            foreach ($this->getConfig()->asArray() as $name => $config) {
                 if (!array_key_exists('active', $config) || !array_key_exists('environments_to_omit', $config) || !array_key_exists('class', $config)) {
                     throw new InvalidArgumentException("Guard '$name' misses parts of the configuration.");    
                 }

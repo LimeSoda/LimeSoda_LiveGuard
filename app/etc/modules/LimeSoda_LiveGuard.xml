@@ -4,6 +4,9 @@
 		<LimeSoda_LiveGuard>
 			<active>true</active>
 			<codePool>community</codePool>
+			<depends>
+				<LimeSoda_EnvironmentConfiguration />
+			</depends>
 		</LimeSoda_LiveGuard>
 	</modules>
 </config>

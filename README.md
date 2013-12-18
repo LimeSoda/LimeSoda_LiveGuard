@@ -16,9 +16,9 @@ A typical use case is to make sure that no production settings are used in non-p
 
 Requirements
 ------------
+- LimeSoda_EnvironmentConfiguration
 - PHP >= 5.2.0
 - Mage_Core
-- ...
 
 Compatibility
 -------------
@@ -40,7 +40,8 @@ Your shop won't run if this extension is installed and you didn't define an envi
 
 This happens to make sure that everything is configured properly and no guard is missed because of a misconfiguration.
 
-Configure the environment in your XML. Most of the time you will want to put this in local.xml as this file doesn't get shared between copies of the shop in most setups.
+Configure the environment in your XML. Normally you already should have defined the environment when you installed `LimeSoda_EnvironmentConfiguration`.
+Most of the time you will want to put this in local.xml as this file doesn't get shared between copies of the shop in most setups.
 
     <config>
         <global>
@@ -61,7 +62,7 @@ environment to `environments_to_omit` if the guard should **not** be running in 
 
     <config>
         <global>
-            <limesoda_liveguard>
+            <limesoda>
                 <guards>
                     <m2epro_guard>
                         <active>true</active>
@@ -69,7 +70,7 @@ environment to `environments_to_omit` if the guard should **not** be running in 
                         <class>yourextension/yourclass</class>
                     </m2epro_guard>
                 </guards>
-            </limesoda_liveguard>
+            </limesoda>
         </global>
     </config>
 
