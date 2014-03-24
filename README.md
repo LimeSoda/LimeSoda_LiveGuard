@@ -16,7 +16,7 @@ A typical use case is to make sure that no production settings are used in non-p
 
 Requirements
 ------------
-- LimeSoda_EnvironmentConfiguration
+- [LimeSoda_EnvironmentConfiguration](https://github.com/LimeSoda/LimeSoda_EnvironmentConfiguration)
 - PHP >= 5.2.0
 - Mage_Core
 
