@@ -1,5 +1,5 @@
 {
-    "name": "LimeSoda/LimeSoda_LiveGuard",
+    "name": "limesoda/limesoda_live-guard",
     "type": "magento-module",
     "license":"OSL-3.0",
     "description":"Helps you to protect your live environment (and others) by checking that all settings are what they should be.",
