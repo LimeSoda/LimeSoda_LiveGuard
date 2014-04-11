@@ -83,6 +83,9 @@ What you define:
   The environments in which the guard should **not** be active. You can separate several environments with a comma.
 * `class`:
   A string identifying the guard class. You define this like you would define any other class (e.g. when defining an observer). This class has to implement the `LimeSoda_LiveGuard_Model_GuardInterface` interface.
+* `autoswitch`:
+  If the value is any other value than `false` the `autoSwitch` function in your guard class will be called before the `process` function 
+
   
 ### Implementing a guard
 
