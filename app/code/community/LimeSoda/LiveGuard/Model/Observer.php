@@ -15,10 +15,12 @@ class LimeSoda_LiveGuard_Model_Observer
         }
         
         $guards = array();
-        foreach ($config->getGuards() as $guard) {
-                $guard->process();
+        foreach ($config->getGuards() as $guard)
+        {
+            if( $guard->hasAutoSwitch() && $guard->getAutoSwitch() ) $guard->autoSwitch();
+            $guard->process();
         }
-        
+
         return $this;
     }
 }

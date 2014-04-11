@@ -57,8 +57,11 @@ class LimeSoda_LiveGuard_Model_Config
                 if (!($guard instanceof LimeSoda_LiveGuard_Model_GuardInterface)) {
                     throw new InvalidArgumentException('Guard class doesn\'t implement the guard interface.');
                 }
-                
+
+                if( array_key_exists('autoswitch', $config) && $config['autoswitch'] !== 'false' && method_exists($guard, 'autoswitch') ) $guard->setAutoSwitch( true );
+
                 $guards[] = $guard;
+
             }
             $this->_guards = $guards;
         } 
