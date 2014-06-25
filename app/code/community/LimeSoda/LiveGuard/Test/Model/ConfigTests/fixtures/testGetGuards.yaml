@@ -1,0 +1,8 @@
+config:
+  global/limesoda/guards/second_guard/active: 1
+  global/limesoda/guards/second_guard/environments_to_omit: staging
+  global/limesoda/guards/second_guard/class: second_guard/class
+
+  global/limesoda/guards/third_guard/active: 1
+  global/limesoda/guards/third_guard/environments_to_omit: staging
+  global/limesoda/guards/third_guard/class: third_guard/class

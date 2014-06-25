@@ -6,6 +6,14 @@
 			<version>0.0.1</version>
 		</LimeSoda_LiveGuard>
 	</modules>
+
+    <phpunit>
+        <suite>
+            <modules>
+                <Skeleton_Slider />
+            </modules>
+        </suite>
+    </phpunit>
 	
 	<global>
 	    <events>
