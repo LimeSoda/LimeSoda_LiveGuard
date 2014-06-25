@@ -110,6 +110,11 @@ Matthias Zeis
 [http://www.limesoda.com](http://www.limesoda.com)  
 [@mzeis](https://twitter.com/mzeis)
 
+Contributor
+---------
+Andreas Penz
+[@dopamedia](https://twitter.com/dopamedia)
+
 License
 -------
 [OSL - Open Software Licence 3.0](http://opensource.org/licenses/osl-3.0.php)

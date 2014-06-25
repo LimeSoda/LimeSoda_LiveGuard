@@ -1,0 +1,9 @@
+first_guard:
+  active: '1'
+  environments_to_omit: live
+  class: first_guard/class
+
+second_guard:
+  active: '0'
+  environments_to_omit: staging
+  class: second_guard/class

@@ -1,0 +1,4 @@
+config:
+  global/limesoda/guards/first_guard/active: 'false'
+  global/limesoda/guards/first_guard/environments_to_omit: live
+  global/limesoda/guards/first_guard/class: first_guard/class
