@@ -25,6 +25,7 @@ before_script:
   - CURR_DIR=$(pwd)
   - wget https://raw.githubusercontent.com/colinmollenhour/modman/master/modman -O ./mageci/bin/modman
   - chmod +x ./mageci/bin/modman
+  - ./mageci/bin/mage-ci install-module magento http://github.com/LimeSoda/LimeSoda_EnvironmentConfiguration
   - ./mageci/bin/mage-ci install-module magento $CURR_DIR/phpunit
   - ./mageci/bin/mage-ci install-module magento $CURR_DIR
   - composer install --dev
