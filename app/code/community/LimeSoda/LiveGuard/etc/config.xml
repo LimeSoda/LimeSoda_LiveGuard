@@ -10,7 +10,7 @@
     <phpunit>
         <suite>
             <modules>
-                <Skeleton_Slider />
+                <LimeSoda_LiveGuard />
             </modules>
         </suite>
     </phpunit>
