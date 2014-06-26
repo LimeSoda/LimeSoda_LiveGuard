@@ -1,7 +1,7 @@
 LimeSoda LiveGuard
 =====================
 
-[![Build Status](https://travis-ci.org/Dopamedia/LimeSoda_LiveGuard.svg)](https://travis-ci.org/Dopamedia/LimeSoda_LiveGuard)
+[![Build Status](https://travis-ci.org/LimeSoda/LimeSoda_LiveGuard.svg)](https://travis-ci.org/LimeSoda/LimeSoda_LiveGuard)
 
 Helps you to protect your live environment (and others) by checking that all settings are what they should be.
 
