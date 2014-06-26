@@ -1,0 +1,17 @@
+{
+    "require": {
+        "magento-hackathon/magento-composer-installer": "1.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://packages.firegento.com"
+        }
+    ],
+    "extra": {
+        "magento-root-dir": "../magento/"
+    }
+}
