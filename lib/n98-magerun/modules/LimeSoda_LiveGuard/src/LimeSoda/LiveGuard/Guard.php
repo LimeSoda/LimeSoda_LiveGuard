@@ -22,6 +22,7 @@ class Guard extends AbstractMagentoCommand
     protected static $tableHeaders = array('Message', 'File');
     const ERROR_MSG = '%s %s Errors(s) found';
     const SUCCESS_MSG = '%s No Errors found';
+    const CONFIG_MISSING_MSG = '%s No Configuration found';
 
     protected function configure()
     {
@@ -45,6 +46,7 @@ class Guard extends AbstractMagentoCommand
             $config = \Mage::getModel('limesoda_liveguard/config');
 
             if (!$config->configExists()) {
+                $this->printConfigMissing($output);
                 return $this;
             }
 
@@ -113,6 +115,23 @@ class Guard extends AbstractMagentoCommand
         }
 
         $table->render($output);
+    }
+
+    /**
+     * @param OutputInterface $output
+     */
+    protected function printConfigMissing(OutputInterface $output)
+    {
+        $this->writeSection(
+            $output,
+            sprintf(
+                self::CONFIG_MISSING_MSG,
+                \N98\Util\Unicode\Charset::convertInteger(
+                    CheckCommand::UNICODE_CROSS_CHAR
+                )
+            ),
+            'bg=blue;fg=white'
+        );
     }
 
     /**
