@@ -1,0 +1,6 @@
+autoloaders:
+  LimeSoda\LiveGuard: %module%/src
+
+commands:
+  customCommands:
+    - LimeSoda\LiveGuard\Guard

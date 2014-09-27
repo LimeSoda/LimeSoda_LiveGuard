@@ -1,2 +1,3 @@
 app/code/community/LimeSoda/LiveGuard/ app/code/community/LimeSoda/LiveGuard/
 app/etc/modules/LimeSoda_LiveGuard.xml app/etc/modules/LimeSoda_LiveGuard.xml
+lib/n98-magerun/modules/LimeSoda_LiveGuard lib/n98-magerun/modules/LimeSoda_LiveGuard
