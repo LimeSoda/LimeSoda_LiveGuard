@@ -14,7 +14,6 @@ class LimeSoda_LiveGuard_Model_Observer
             return $this;
         }
         
-        $guards = array();
         foreach ($config->getGuards() as $guard) {
                 $guard->process();
         }
