@@ -15,20 +15,15 @@ env:
   - MAGENTO_VERSION="1.8.1.0"
   - MAGENTO_VERSION="1.9.0.0"
   - MAGENTO_VERSION="1.9.0.1"
-before_script:
+before_install:
   - mkdir magento/
   - cp -f .travis/composer.json composer.json
-  - git clone git://github.com/EcomDev/MageCI.git ./mageci/
-  - ./mageci/bin/mage-ci install magento $MAGENTO_VERSION magento_test -c -t -r http://mage-ci.ecomdev.org
-  - composer update
-  - git clone git://github.com/EcomDev/EcomDev_PHPUnit.git -b dev ./phpunit/
-  - CURR_DIR=$(pwd)
-  - wget https://raw.githubusercontent.com/colinmollenhour/modman/master/modman -O ./mageci/bin/modman
-  - chmod +x ./mageci/bin/modman
-  - ./mageci/bin/mage-ci install-module magento https://github.com/LimeSoda/LimeSoda_EnvironmentConfiguration.git
-  - ./mageci/bin/mage-ci install-module magento $CURR_DIR/phpunit
-  - ./mageci/bin/mage-ci install-module magento $CURR_DIR
   - composer install --dev
-  - cd magento
+before_script:
+  - CURR_DIR=$(pwd)
+  - bin/mage-ci install magento $MAGENTO_VERSION magento_test -c -t -r http://mage-ci.ecomdev.org
+  - bin/mage-ci install-module magento $CURR_DIR
+  - git clone git://github.com/IvanChepurnyi/EcomDev_PHPUnit.git -b dev ./phpunit/
+  - bin/mage-ci install-module $CURR_DIR/magento $CURR_DIR/phpunit/
 script:
-  - ../vendor/bin/phpunit --group LimeSoda_LiveGuard
+  - bin/mage-ci phpunit magento
