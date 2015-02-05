@@ -9,17 +9,17 @@ namespace LimeSoda\LiveGuard;
 class Error
 {
 
-    protected $exception;
-    protected $message;
-    protected $firstTraceFile;
+    protected $_exception;
+    protected $_message;
+    protected $_firstTraceFile;
 
     /**
      * @param \Exception $e
      */
     public function __construct(\Exception $e)
     {
-        $this->message = $e->getMessage();
-        $this->firstTraceFile = $this->setFirstTraceFile($e);
+        $this->_message = $e->getMessage();
+        $this->_firstTraceFile = $this->setFirstTraceFile($e);
     }
 
     /**
@@ -38,7 +38,7 @@ class Error
      */
     public function getFirstTraceFile()
     {
-        return $this->firstTraceFile;
+        return $this->_firstTraceFile;
     }
 
     /**
@@ -46,7 +46,7 @@ class Error
      */
     public  function getMessage()
     {
-        return $this->message;
+        return $this->_message;
     }
 
 }

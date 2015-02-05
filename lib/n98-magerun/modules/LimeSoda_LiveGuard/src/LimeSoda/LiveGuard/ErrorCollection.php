@@ -10,14 +10,14 @@ use LimeSoda\LiveGuard\Error;
 class ErrorCollection
 {
 
-    protected $exceptions = array();
+    protected $_exceptions = array();
 
     /**
      * @param \Exception $exception
      */
     public function addError( \Exception $exception )
     {
-        $this->exceptions[] = new Error($exception);
+        $this->_exceptions[] = new Error($exception);
     }
 
     /**
@@ -25,7 +25,7 @@ class ErrorCollection
      */
     public function getErrors()
     {
-        return $this->exceptions;
+        return $this->_exceptions;
     }
 
     /**
@@ -33,6 +33,6 @@ class ErrorCollection
      */
     public function countErrors()
     {
-        return count($this->exceptions);
+        return count($this->_exceptions);
     }
 }
