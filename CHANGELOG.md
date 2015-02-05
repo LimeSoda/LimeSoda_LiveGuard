@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0.0 (unreleased)
+1.0.0 (05.02.2015)
 -----
 * Added unit tests
 * Added Travis CI integration
