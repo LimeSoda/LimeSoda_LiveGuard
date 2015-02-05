@@ -22,7 +22,7 @@ class Guard extends AbstractMagentoCommand
     protected static $tableHeaders = array('Message', 'File');
     const ERROR_MSG = '%s %s Errors(s) found';
     const SUCCESS_MSG = '%s No Errors found';
-    const CONFIG_MISSING_MSG = '%s No Configuration found';
+    const CONFIG_MISSING_MSG = '%s No Configuration found. Please add guards to the configuration.';
 
     protected function configure()
     {
