@@ -14,7 +14,7 @@ Build Status
 
 Facts
 -----
-- version: 1.0.0
+- version: 1.0.1
 - extension key: LimeSoda_LiveGuard
 - GitHub URL: [https://github.com/LimeSoda/LimeSoda_LiveGuard](https://github.com/LimeSoda/LimeSoda_LiveGuard)
 

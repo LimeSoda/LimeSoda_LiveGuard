@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.0.1 (05.02.2015)
+-----
+* Fixed unit test
+
 1.0.0 (05.02.2015)
 -----
 * Added unit tests
