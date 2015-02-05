@@ -1,15 +1,22 @@
 LimeSoda LiveGuard
 =====================
-
-[![Build Status](https://travis-ci.org/LimeSoda/LimeSoda_LiveGuard.svg)](https://travis-ci.org/LimeSoda/LimeSoda_LiveGuard) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/LimeSoda/LimeSoda_LiveGuard/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/LimeSoda/LimeSoda_LiveGuard/?branch=master)
-
 Helps you to protect your live environment (and others) by checking that all settings are what they should be.
+
+Build Status
+---
+**Latest Release**
+
+[![Build Status](https://travis-ci.org/LimeSoda/LimeSoda_LiveGuard.svg?branch=master)](https://travis-ci.org/LimeSoda/LimeSoda_LiveGuard) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/LimeSoda/LimeSoda_LiveGuard/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/LimeSoda/LimeSoda_LiveGuard/?branch=master)
+
+**Development Branch**
+
+[![Build Status](https://travis-ci.org/LimeSoda/LimeSoda_LiveGuard.svg?branch=dev)](https://travis-ci.org/LimeSoda/LimeSoda_LiveGuard) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/LimeSoda/LimeSoda_LiveGuard/badges/quality-score.png?b=dev)](https://scrutinizer-ci.com/g/LimeSoda/LimeSoda_LiveGuard/?branch=dev)
 
 Facts
 -----
-- version: 0.0.1
+- version: 1.0.0
 - extension key: LimeSoda_LiveGuard
-- [extension on GitHub](https://github.com/company/LimeSoda_LiveGuard)
+- GitHub URL: [https://github.com/LimeSoda/LimeSoda_LiveGuard](https://github.com/LimeSoda/LimeSoda_LiveGuard)
 
 Description
 -----------
@@ -25,7 +32,11 @@ Requirements
 
 Compatibility
 -------------
-- Magento >= EE 1.13.0.2 (should also work in older and CE versions but was not tested)
+- Tested with these Magento versions:
+    - Magento CE 1.5.0.1 - 1.9.0.1
+    - Magento EE 1.13.0.2 - 1.14.1.0
+
+  Other versions may work too.
 
 Installation Instructions
 -------------------------
@@ -107,16 +118,10 @@ Contribution
 ------------
 Any contribution is highly appreciated. The best way to contribute code is to open a [pull request on GitHub](https://help.github.com/articles/using-pull-requests).
 
-Developer
----------
-Matthias Zeis
-[http://www.limesoda.com](http://www.limesoda.com)  
-[@mzeis](https://twitter.com/mzeis)
-
-Contributor
----------
-Andreas Penz
-[@dopamedia](https://twitter.com/dopamedia)
+Developers
+----------
+* Matthias Zeis ([@mzeis](https://twitter.com/mzeis))
+* Andreas Penz ([@dopamedia](https://twitter.com/dopamedia))
 
 License
 -------
@@ -124,4 +129,4 @@ License
 
 Copyright
 ---------
-(c) 2013 LimeSoda Interactive Marketing GmbH
+(c) 2013-2015 LimeSoda Interactive Marketing GmbH
