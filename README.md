@@ -121,7 +121,7 @@ Any contribution is highly appreciated. The best way to contribute code is to op
 Developers
 ----------
 * Matthias Zeis ([@mzeis](https://twitter.com/mzeis))
-* Andreas Penz ([@dopamedia](https://twitter.com/dopamedia))
+* Andreas Penz ([@andraspenz](https://twitter.com/andraspenz))
 
 License
 -------
