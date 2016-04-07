@@ -30,7 +30,7 @@ class LimeSoda_LiveGuard_Test_Config_ConfigTests
      */
     public function testModuleVersion()
     {
-        $this->assertModuleVersion('1.0.1');
+        $this->assertModuleVersion('1.0.2');
     }
 
     /**

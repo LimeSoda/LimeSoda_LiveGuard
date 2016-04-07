@@ -1,6 +1,10 @@
 Changelog
 =========
 
+1.0.2 (07.04.2016)
+-----
+* Fixed PHPMD warning
+
 1.0.1 (05.02.2015)
 -----
 * Fixed unit test
