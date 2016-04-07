@@ -3,6 +3,7 @@
 class LimeSoda_LiveGuard_Model_Observer
 {
     /**
+     * @SuppressWarnings("UnusedFormalParameter")
      * @param Varien_Event_Observer $observer
      * @return LimeSoda_LiveGuard_Model_Observer
      */
